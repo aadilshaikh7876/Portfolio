@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadil Shaikh - Web Developer</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div id="brand">
+                    <a href="#"><h1><span>A</span>adil <span>S</span>aikh</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="humburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#projects" data-after="Project">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    <section id="hero">
+    <div class="hero container">
+        <div>
+            <h1>Hello, <span></span></h1>
+            <h1>My Name Is <span></span></h1>
+            <h1>Aadil Shaikh<span></span></h1>
+            <a href="#projects" type="button"  class="cta">Portfolio</a>
+        </div>
+    </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Service Section -->
+    <!-- section id="services">
+        <div class="service container"></div>
+        <div class="service-top"></div>
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>The importance of customer service is that customers keep coming back and making referrals to others when they are being treated like kings. With exemplary customer service, the longer you stay in the market, the more customers you make. Longevity itself is a competitive advantage for your brand.
+        </p>
+        <div class="srvice-bottom"></div>
+        <div class="service-item">
+            <div class="icon">
+                <img src="data:image/png;base64,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">
+                <h2>Web Design</h2>
+                <p>The importance of customer service is that customers keep coming back and making referrals to others when they are being treated like kings. With exemplary customer service, the longer you stay in the market, the more customers you make. Longevity itself is a competitive advantage for your brand.</p>
+            </div>
+            <div class="icon">
+                <img src="data:image/png;base64,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">
+                <h2>Web Design</h2>
+                <p>The importance of customer service is that customers keep coming back and making referrals to others when they are being treated like kings. With exemplary customer service, the longer you stay in the market, the more customers you make. Longevity itself is a competitive advantage for your brand.</p>
+            </div>
+            <div class="icon">
+                <img src="data:image/png;base64,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">
+                <h2>Web Design</h2>
+                <p>The importance of customer service is that customers keep coming back and making referrals to others when they are being treated like kings. With exemplary customer service, the longer you stay in the market, the more customers you make. Longevity itself is a competitive advantage for your brand.</p>
+            </div>
+            <div class="icon">
+                <img src="data:image/png;base64,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">
+                <h2>Web Design</h2>
+                <p>The importance of customer service is that customers keep coming back and making referrals to others when they are being treated like kings. With exemplary customer service, the longer you stay in the market, the more customers you make. Longevity itself is a competitive advantage for your brand.</p>
+            </div>
+        </div>
+    </section -->
+    <!-- End Service Section -->
+
+    <!-- Project Section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info"><h1>Project 1</h1>
+                    <h2>Car Rental</h2>
+                <p>
+                    Rental software helps you track car availability using the serial number that has already integrated to the inventory. You can also see the timeline regarding how many cars available in a certain period of time. You will not have to guess it any longer.
+                </p>
+            </div>
+            <div class="project-img">
+                <img src="work.jpg" alt="">
+            </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info"><h1>Project 2</h1>
+                    <h2>Car Rental</h2>
+                <p>
+                    Rental software helps you track car availability using the serial number that has already integrated to the inventory. You can also see the timeline regarding how many cars available in a certain period of time. You will not have to guess it any longer.
+                </p>
+            </div>
+            <div class="project-img">
+                <img src="work.jpg" alt="">
+            </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info"><h1>Project 3</h1>
+                    <h2>Car Rental</h2>
+                <p>
+                    Rental software helps you track car availability using the serial number that has already integrated to the inventory. You can also see the timeline regarding how many cars available in a certain period of time. You will not have to guess it any longer.
+                </p>
+            </div>
+            <div class="project-img">
+                <img src="work.jpg" alt="">
+            </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info"><h1>Project 4</h1>
+                    <h2>Car Rental</h2>
+                <p>
+                    Rental software helps you track car availability using the serial number that has already integrated to the inventory. You can also see the timeline regarding how many cars available in a certain period of time. You will not have to guess it any longer.
+                </p>
+            </div>
+            <div class="project-img">
+                <img src="work.jpg" alt="">
+            </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info"><h1>Project 5</h1>
+                    <h2>Car Rental</h2>
+                <p>
+                    Rental software helps you track car availability using the serial number that has already integrated to the inventory. You can also see the timeline regarding how many cars available in a certain period of time. You will not have to guess it any longer.
+                </p>
+            </div>
+            <div class="project-img">
+                <img src="work.jpg" alt="">
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Project Section -->
+
+    <!-- About -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="IMG.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>me</span></h1>
+                <h2>Front End Developer</h2>
+                <p>
+                    Recently graduated Bachelor of Computer Science, looking  for a position in an organization that will provide a competitive learning environment to broaden career prospects and enhance both technical and intellectual skills.
+                    Good position in reputed company And Quick Learner.
+                </p>
+                <a href="#" class="cta">Download Resume</a>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact container">
+            <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone--v2.png"/></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+91 7021831726</h2>
+                        <h2>+91 9768530743</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon adjust"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+                    <div class="contact-info">
+                        <h1>E Mail</h1>
+                        <h2>aadilshaikh7876@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>R No.52,Pilaji Buag,</h2>
+                        <h2>Near Sarvoday Garden,</h2>
+                        <h2>Kalyan(west)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1><span>A</span>adil <span>S</span>haikh</h1>
+            </div>
+            <h2>Your Complete Web Solution</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                <a href="https://www.facebook.com/profile.php?id=100006433920544"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+                </div>
+                <div class="social-item">
+                <a href=" https://www.instagram.com/invites/contact/?i=3pv2rj0hx5y7&utm_content=ilvs7jz"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new--v1.png"/></a>
+                </div>
+                <div class="social-item">
+                <a href="https://www.linkedin.com/in/aadil-shaikh-51024a207"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
+                </div>
+                <div class="social-item">
+                <a href="https://telegram.org/dl"><img src="https://img.icons8.com/bubbles/100/000000/telegram-app.png"/></a>            
+                </div>
+            </div>
+            <p>Copyright &COPY; 2022 Aadil. All rights reserved</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script src="js.js"></script>
+</body>
+</html>
