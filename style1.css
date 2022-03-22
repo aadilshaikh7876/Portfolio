@@ -300,7 +300,7 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -319,7 +319,7 @@ a {
 }
 
 #projects .project-info h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -385,7 +385,7 @@ a {
 
 #about .about-img img{
     width: 95%;
-    height: 60vh;
+    height: 50vh;
 }
 
 #about .col-right {
@@ -569,7 +569,7 @@ a {
 #footer .social-item {
     height: 50px;
     width: 10px;
-    margin: 0px 100px;
+    margin: 0px 80px;
     margin-left: 1%;
 }
 
